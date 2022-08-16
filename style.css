@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+position: relative;
+   display: block;
+   width: 450px;
+   height: 450px;
+   margin: 20px auto;
+   background-color: #666666;
+   border-radius: 5px;
+   box-shadow: 0px 10px 15px 2px #000000;
+}
+#cvs{
+    position: absolute;
+    background-color: #151414;
+}
+.options{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #666666;
+}
+.game-title{
+    user-select: none;
+    text-align: center;
+    color: tomato;
+    margin: 20px;
+    padding: 10px;
+    text-shadow: 0px 10px 10px  black;
+}
+.sub-title{
+    user-select: none;
+    text-align: center;
+    color: whitesmoke;
+    margin: 20px;
+    text-shadow: 0px 10px 10px  black;
+}
+.container div{
+    display: inline-block;
+}
+
+.computer{
+   margin: 10px 20px 10px 70px;
+   padding: 10px;
+    border: 1px solid tomato;
+    border-radius: 3px;
+    width: fit-content;
+    text-align: center;
+    color: whitesmoke;
+}
+.friend{
+    margin: 10px 20px 10px 120px;
+   padding: 10px;
+    border: 1px solid tomato;
+    border-radius: 3px;
+    width: fit-content;
+    text-align: center;
+    color: whitesmoke;
+   
+}
+.computer,.friend{
+    cursor: pointer;
+    transition: 0.08s ease-in-out;
+    box-shadow: 0px 0px 40px 1px #000;
+    user-select: none;
+    background-color: transparent ;
+}
+.computer:active,.friend:active{
+    background-color: tomato;
+    box-shadow: none;
+    transform: scale(0.7);
+}
+.computer:hover,.friend:hover{
+    background-color: tomato;
+}
+.container h2{
+    user-select: none;
+    text-align: center;
+    margin: 15px 0;
+    color: white;
+}
+.x,.o{
+    margin: 10px 20px 10px 180px;
+    padding: 10px;
+     border: 1px solid tomato;
+     border-radius: 3px;
+     width: fit-content;
+     text-align: center;
+     color: whitesmoke;
+    
+}
+.o{
+    margin-left: 10px;
+}
+.x,.o{
+    cursor: pointer;
+    transition: 0.08s ease-in-out;
+    box-shadow: 0px 0px 40px 1px #000;
+    user-select: none;
+}
+.x:active,.o:active{
+    background-color: tomato;
+    box-shadow: none;
+    transform: scale(0.7);
+}
+.x:hover,.o:hover{
+    background-color: tomato;
+    
+}
+.options .play{
+    user-select: none;
+    cursor: pointer;
+    display: block;
+    margin: 25px auto;
+    width: fit-content;
+    padding: 15px 50px;
+    background-color: #000;
+    color: wheat;
+    border-radius: 5px;
+    transition: 0.07s ease-in-out;
+}
+.options .play:active{
+    transform: scale(0.7);
+}
+.container .gameover{
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    position: absolute;
+    
+}
+.hide{
+    visibility: hidden;
+    scale: 0;
+}
+.active{
+    background: tomato !important;
+}
+.unselect{
+    background-color: red;
+}
+
+
+
