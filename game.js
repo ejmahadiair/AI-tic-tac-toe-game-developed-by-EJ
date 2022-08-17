@@ -113,7 +113,7 @@ const play = (player, oponent) => {
     console.log("player ", player);
     gameOver.innerHTML = `
        <h1>${message}</h1>
-       <img class="winner-img" src="${imgSrc}"</img>
+       <img class="winner-img" src="./img/${player}.png" </img>
        <div class="play-again" onclick="location.reload()">Play Again</div>
       `;
     gameOver.classList.remove("hide");
