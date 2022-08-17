@@ -143,6 +143,36 @@ position: relative;
 .unselect{
     background-color: red;
 }
+.container .gameover{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.container .gameover img{
+        width: 100px;
+        height: 100px;
+        margin: 50px;
+}
+.container .gameover .play-again{
+     cursor: pointer;
+     padding: 10px;
+     border: 1px solid tomato;
+     border-radius: 3px;
+     width: fit-content;
+     text-align: center;
+     color: whitesmoke;
+     transition: 0.07s ease-in-out;
+
+}
+.container .gameover .play-again:hover{
+    background-color: tomato;
+}
+.container .gameover .play-again:active{
+    background-color: tomato;
+    transform: scale(0.7);
+}
 
 
 
